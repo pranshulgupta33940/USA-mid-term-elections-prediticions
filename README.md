@@ -159,7 +159,9 @@ Jupyter Notebook
 
 Git
 
-📁 Project Structure
+## 📁 Project Structure
+
+```text
 presidential-approval-midterms/
 ├── data/
 │   ├── approval_inflation_up_gdp.csv
@@ -170,7 +172,7 @@ presidential-approval-midterms/
 │   ├── time_series_analysis.ipynb
 │   └── modeling.ipynb
 ├── reports/
-├── README.md
+└── README.md
 
 
 📌 Conclusion
