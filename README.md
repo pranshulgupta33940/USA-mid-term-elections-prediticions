@@ -1,11 +1,11 @@
-📊 Presidential Approval & U.S. Midterm Elections Analysis
-📌 Project Overview
+ Presidential Approval & U.S. Midterm Elections Analysis
+Project Overview
 
 Midterm elections play a crucial role in shaping political power in the United States. Historically, the president’s party often loses seats during midterms, a phenomenon influenced by public sentiment toward the sitting president.
 
 This project analyzes how presidential approval ratings impact U.S. midterm election outcomes, using historical data combined with economic indicators. By applying time series analysis, regression, and forecasting techniques, the study evaluates whether approval ratings can meaningfully explain and predict seat gains or losses.
 
-❓ Business / Research Problem
+Business / Research Problem
 
 While presidential approval is widely believed to influence midterm elections, the strength and reliability of this relationship are not always clear.
 
@@ -13,7 +13,7 @@ Key question addressed:
 
 Does the president’s approval rating have a measurable impact on how their party performs in U.S. midterm elections?
 
-🎯 Objectives
+Objectives
 
 This project aims to:
 
@@ -31,8 +31,8 @@ Examine the role of inflation, GDP growth, and unemployment
 
 Summarize insights explaining midterm election outcomes
 
-📂 Dataset Description
-1️⃣ Presidential Approval Dataset
+Dataset Description
+ Presidential Approval Dataset
 
 File: approval_inflation_up_gdp.csv
 
@@ -42,7 +42,7 @@ Inflation, unemployment, and GDP growth
 
 ~4,200 rows covering multiple presidencies
 
-2️⃣ Midterm Elections Dataset
+2️Midterm Elections Dataset
 
 File: midterm_elections_1942_to_2022.csv
 
@@ -52,7 +52,7 @@ House and Senate seat changes
 
 Required cleaning of textual seat-change values
 
-3️⃣ Feature-Engineered Dataset
+3️ Feature-Engineered Dataset
 
 File: project_data_with_features.csv
 
@@ -62,8 +62,8 @@ Lag features and rolling averages
 
 Designed for SARIMAX and forecasting models
 
-🛠️ Methods & Approach
-🔹 Data Preparation
+ Methods & Approach
+ Data Preparation
 
 Cleaned and merged approval, economic, and election datasets
 
@@ -71,7 +71,7 @@ Converted seat-change text into numeric values
 
 Handled missing data and standardized time formats
 
-🔹 Time Series Processing
+Time Series Processing
 
 Resampled approval ratings into monthly averages
 
@@ -81,7 +81,7 @@ Decomposed series into trend, seasonality, and residuals
 
 Created lag features to capture delayed effects
 
-🔹 Statistical Analysis
+Statistical Analysis
 
 Correlation analysis between approval and seat losses
 
@@ -89,7 +89,7 @@ Linear regression with economic indicators as predictors
 
 Interpreted coefficients to explain political impact
 
-🔹 Modeling Techniques
+Modeling Techniques
 
 ARIMA for approval trend analysis
 
@@ -97,7 +97,7 @@ SARIMAX incorporating inflation, unemployment, and GDP
 
 Forecasted approval trends and compared them with historical midterm outcomes
 
-🔹 Feature Engineering
+Feature Engineering
 
 Approval lags (1–3 months)
 
@@ -107,7 +107,7 @@ Economic indicators (inflation, GDP growth, unemployment)
 
 Time features (month, year, term duration)
 
-📈 Current Findings & Insights
+Current Findings & Insights
 
 Presidential approval closer to midterm elections is more predictive than early-term approval
 
@@ -119,7 +119,7 @@ The honeymoon period fades quickly and impacts midterm outcomes
 
 Results align strongly with established political science literature
 
-🧪 Model Evaluation
+Model Evaluation
 
 Models were evaluated using:
 
@@ -129,7 +129,7 @@ Mean Squared Error (MSE)
 
 Residual analysis and error diagnostics
 
-🚀 Future Work
+Future Work
 
 Planned improvements include:
 
@@ -145,7 +145,7 @@ Automating data collection pipelines
 
 Extending analysis to other countries’ election systems
 
-🧰 Tools & Technologies
+Tools & Technologies
 
 Python
 
@@ -159,7 +159,7 @@ Jupyter Notebook
 
 Git
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 presidential-approval-midterms/
